@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    background: #F6F6F6;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+
+    cursor: pointer;
+    font-size: 0;
+    border: 1px solid silver;
+    text-align: center;
+
+    padding: 10px;
+    margin: 4px;
+    background: #e5eff5;
+    line-height: 24px;
+    border-radius: 4px;
+}
+
+.cell:hover {
+    background: #d2efe3;
+    border: 1px solid rgb(122, 120, 120);
+}
+
+.opened {
+    font-size: 20px;
+}
+
+.red-cell {
+    border: 1px solid red;
+}
+
+
+.mine-container {
+    display: flex;
+    justify-content: center;
+}
+
+.mine-root {
+    background:rgba(255,255,255,1);
+    padding: 10px;
+    box-shadow:0px 2px 6px 0px rgba(0,0,0,0.04);
+    border-radius:8px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    margin: 20px 20px;
+}
+
+.action-panel {
+    width: 500px;
+    background:rgba(255,255,255,1);
+    box-shadow:0px 2px 12px 0px rgba(0,0,0,0.04);
+
+    border-radius:16px;
+    padding: 20px;
+}
+
+.new-game {
+    height: 24px;
+    background: rgba(255,255,255,1);
+    padding: 6px 16px;
+    border-radius: 8px;
+
+    border: 1px solid rgba(226,226,234,1);
+    cursor: pointer;
+    font-size: 14px;
+
+    line-height: 24px;
+    width: fit-content;
+    margin-top: 20px;
+}
+
+.new-game:hover {
+    background: rgba(226, 226, 226, 0.4);
+}
+.new-game:active {
+    background: rgba(196, 194, 194, 0.4);
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+}
+
+.time-container {
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+
+    background:linear-gradient(225deg, rgb(123, 204, 247) 0%, rgb(180, 223, 255) 100%);
+    border-radius:6px;
+    padding: 10px;
+}
+
+.time-count {
+    padding-left: 10px;
+}
+
+.time-icon .iconfont {
+    vertical-align: middle;
+    font-size: 40px;
+    color: white;
+}
+
+.time-count {
+    vertical-align: middle;
+    font-size: 30px;
+}
+
+.apple {
+    display: none;
+    width: 36px;
+    height: 36px;
+}
+
+.num-container {
+    position: relative;
+    vertical-align: middle;
+}
+
+.apple-num {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /*vertical-align: middle;*/
+}
+
+.mine-count {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 44px;
+    font-size: 30px;
+}
+
+.flag {
+    display: none;
+    width: 30px;
+    height: 30px;
+}
+
+.show-flag {
+    display: inline;
+}
+
+.opened .apple {
+    display: block;
+}
+
+.tutorial-title {
+    /*text-align: center;*/
+    font-size: larger;
+
+}
+
+.tutorial-content {
+    /*text-align: center;*/
+    /*font-size: large;*/
+    margin-top: 10px;
+}
+
+.content-back {
+    margin-top: 20px;
+    background: #f9fbe2;
+    border-radius: 8px;
+    padding: 10px;
+}

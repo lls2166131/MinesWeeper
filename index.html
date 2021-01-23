@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mark Apple</title>
+    <link rel="stylesheet" href="index.css" type="text/css"/>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1002274_uz7i4b51s6.css" type="text/css"/>
+    <style type="text/css">
+        .icon {
+            width: 1em; height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="wrapper">
+    <main class="mine-container">
+        <div class="mine-root"></div>
+    </main>
+
+    <div class="action-panel">
+        <div class="title">Mark Apple - A minesweeper game</div>
+        <div class="time-container">
+            <div class="time-icon">
+                <span><i class="icon iconfont mine-shizhong"></i></span>
+                <span class="time-count">
+                    <span class="show-min">00</span>:<span class="show-second">00</span>
+                </span>
+            </div>
+            <div class="num-container">
+                <img class="apple-num" src="./img/red_apple.png" alt="apple"/>
+            </div>
+        </div>
+        <div class="new-game">New Game</div>
+
+        <div class="content-back">
+            <div class="tutorial-title">How to Play?</div>
+            <p class="tutorial-content">Click any square to start!🌟</p>
+            <p class="tutorial-content">Right click to mark apple!🍎</p>
+            <p class="tutorial-content">⬆️Click New Game button to have a
+                new turn!</p>
+        </div>
+
+    </div>
+</div>
+
+<script  src="tool.js"></script>
+<script  src="createMineData.js"></script>
+<script  src="flagTime.js"></script>
+<script  src="index.js"></script>
+
+</body>
+</html>
